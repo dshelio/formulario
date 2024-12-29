@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Extenso com 25 Perguntas</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Formulário</h1>
+        <form id="extensive-form">
+            <!-- Dados Pessoais -->
+            <section class="section">
+                <h2>1. Dados Pessoais</h2>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="">Escolha uma opção</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </section>
+
+            <!-- Hobbies e Preferências -->
+            <section class="section">
+                <h2>2. Hobbies e Preferências</h2>
+                <label>Quais são seus hobbies? (Selecione todos que se aplicam)</label><br>
+                <input type="checkbox" name="hobby" value="leitura"> Leitura<br>
+                <input type="checkbox" name="hobby" value="musica"> Música<br>
+                <input type="checkbox" name="hobby" value="esportes"> Esportes<br>
+                <input type="checkbox" name="hobby" value="viajar"> Viajar<br>
+                <input type="checkbox" name="hobby" value="fotografia"> Fotografia<br>
+                <input type="checkbox" name="hobby" value="jardinagem"> Jardinagem<br>
+                <input type="checkbox" name="hobby" value="video-games"> Video Games<br>
+                <input type="checkbox" name="hobby" value="cozinhar"> Cozinhar<br>
+
+                <label for="preferencia">Qual sua área de interesse?</label>
+                <input type="text" id="preferencia" name="preferencia" required>
+            </section>
+
+            <!-- Experiência Profissional -->
+            <section class="section">
+                <h2>3. Experiência Profissional</h2>
+                <label for="experiencia">Qual sua experiência na área de tecnologia?</label><br>
+                <input type="radio" id="iniciante" name="experiencia" value="iniciante">
+                <label for="iniciante">Iniciante</label><br>
+                <input type="radio" id="intermediario" name="experiencia" value="intermediario">
+                <label for="intermediario">Intermediário</label><br>
+                <input type="radio" id="avancado" name="experiencia" value="avancado">
+                <label for="avancado">Avançado</label><br>
+
+                <label for="anos_exp">Há quantos anos você trabalha com tecnologia?</label>
+                <input type="number" id="anos_exp" name="anos_exp" required>
+
+                <label for="tecnologias">Quais tecnologias você já trabalhou? (selecione as que se aplicam)</label><br>
+                <input type="checkbox" name="tecnologias" value="html"> HTML<br>
+                <input type="checkbox" name="tecnologias" value="css"> CSS<br>
+                <input type="checkbox" name="tecnologias" value="javascript"> JavaScript<br>
+                <input type="checkbox" name="tecnologias" value="php"> PHP<br>
+                <input type="checkbox" name="tecnologias" value="python"> Python<br>
+                <input type="checkbox" name="tecnologias" value="java"> Java<br>
+            </section>
+
+            <!-- Formação Acadêmica -->
+            <section class="section">
+                <h2>4. Formação Acadêmica</h2>
+                <label for="formacao">Qual o seu nível de escolaridade?</label>
+                <select id="formacao" name="formacao" required>
+                    <option value="">Escolha uma opção</option>
+                    <option value="fundamental">Ensino Fundamental</option>
+                    <option value="medio">Ensino Médio</option>
+                    <option value="superior">Ensino Superior</option>
+                    <option value="pos-graduacao">Pós-Graduação</option>
+                    <option value="mestrado">Mestrado</option>
+                </select>
+
+                <label for="curso">Qual curso você está ou esteve fazendo?</label>
+                <input type="text" id="curso" name="curso" required>
+            </section>
+
+            <!-- Opiniões -->
+            <section class="section">
+                <h2>5. Opiniões</h2>
+                <label for="avaliacao">Como você avalia a qualidade do ensino de tecnologia no Brasil?</label><br>
+                <input type="radio" name="avaliacao" value="otima"> Ótima<br>
+                <input type="radio" name="avaliacao" value="boa"> Boa<br>
+                <input type="radio" name="avaliacao" value="regular"> Regular<br>
+                <input type="radio" name="avaliacao" value="ruim"> Ruim<br>
+
+                <label for="comentarios">Você tem alguma sugestão ou crítica construtiva?</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+            </section>
+
+            <!-- Concentração e Foco -->
+            <section class="section">
+                <h2>6. Concentração e Foco</h2>
+                <label for="concentracao">Você se considera uma pessoa concentrada?</label><br>
+                <input type="radio" name="concentracao" value="sim"> Sim<br>
+                <input type="radio" name="concentracao" value="nao"> Não<br>
+
+                <label for="atividades">Quais atividades você acha mais fáceis de se concentrar?</label><br>
+                <input type="checkbox" name="atividades" value="leitura"> Leitura<br>
+                <input type="checkbox" name="atividades" value="estudos"> Estudos<br>
+                <input type="checkbox" name="atividades" value="trabalho"> Trabalho<br>
+                <input type="checkbox" name="atividades" value="meditacao"> Meditação<br>
+                <input type="checkbox" name="atividades" value="musica"> Ouvir Música<br>
+            </section>
+
+            <!-- Redes Sociais e Internet -->
+            <section class="section">
+                <h2>7. Redes Sociais e Internet</h2>
+                <label for="redes_sociais">Quais redes sociais você mais usa?</label><br>
+                <input type="checkbox" name="redes_sociais" value="facebook"> Facebook<br>
+                <input type="checkbox" name="redes_sociais" value="instagram"> Instagram<br>
+                <input type="checkbox" name="redes_sociais" value="twitter"> Twitter<br>
+                <input type="checkbox" name="redes_sociais" value="linkedin"> LinkedIn<br>
+
+                <label for="tempo_internet">Quantas horas você passa na internet por dia?</label>
+                <input type="number" id="tempo_internet" name="tempo_internet" required>
+            </section>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="java.java"></script>
+</body>
+</html>
